@@ -6,7 +6,7 @@ function App() {
   return (
     <Router basename="/weihnachtsgeschenk2023">
       <Routes>
-        <Route path="/" element={<QrCode />} />
+        <Route path="/code/:codeId" element={<QrCode />} />
         <Route path="/no" element={<NotFound />} />
       </Routes>
     </Router>

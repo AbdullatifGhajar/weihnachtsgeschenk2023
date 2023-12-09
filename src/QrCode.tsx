@@ -1,10 +1,15 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const QrCode = () => {
+type QeCodeParams = {
+    codeId: string;
+};
+
+const QrCode: React.FC = () => {
+    const { codeId } = useParams<QeCodeParams>();
+
     return (
-        <div>
-            Hello world
-        </div>
+        <img src={`${process.env.PUBLIC_URL}/static/${codeId}.png`} alt="QR Code" />
     );
 }
 

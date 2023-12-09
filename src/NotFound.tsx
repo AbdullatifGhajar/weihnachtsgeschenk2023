@@ -1,11 +1,11 @@
 import React from 'react';
 
-const QrCode = () => {
+const NotFound = () => {
     return (
         <div>
-            Hello world
+            not found
         </div>
     );
 }
 
-export default QrCode;
+export default NotFound;

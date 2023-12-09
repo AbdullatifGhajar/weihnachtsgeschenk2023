@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import QrCode from './QrCode';
+import NotFound from './NotFound';
 
 function App() {
   return (
-    <Router basename="/">
-      <Routes>  
+    <Router basename="/weihnachtsgeschenk2023">
+      <Routes>
         <Route path="/" element={<QrCode />} />
+        <Route path="/no" element={<NotFound />} />
       </Routes>
     </Router>
   );

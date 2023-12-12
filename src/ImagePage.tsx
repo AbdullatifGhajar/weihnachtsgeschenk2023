@@ -6,7 +6,7 @@ const NotFound = () => {
     const params = new URLSearchParams(location.search);
     
     const alt = params.get('alt') ?? "Falscher QR-Code";
-    const image = params.get('image') ?? "falsch.png";
+    const image = params.get('image') ?? "falsch";
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>

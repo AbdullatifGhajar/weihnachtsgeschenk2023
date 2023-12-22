@@ -22,15 +22,18 @@ def generate_qr_code(content):
 def add_text_to_qr_image(text_under_qr, qr_img):
     qr_width, qr_height = qr_img.size
     image_width = qr_width
-    image_height = qr_height + 30
+    text_height = 30
+    image_height = qr_height + text_height
 
     combined_image = Image.new("RGB", (image_width, image_height), "white")
-    combined_image.paste(qr_img, (0, 0))
-
+    combined_image.paste(qr_img, (0, text_height))
     draw = ImageDraw.Draw(combined_image)
-    text_x = 0
-    text_y = qr_height + 5  # 5 pixels padding from the QR code
-    draw.text((text_x, text_y), text_under_qr, fill="black")
+
+    text_x = 40
+    text_y = 0
+    font_size = 40
+    font = ImageFont.load_default(size=font_size)
+    draw.text((text_x, text_y), text_under_qr, fill="black", font=font, align="center")
 
     return combined_image
 

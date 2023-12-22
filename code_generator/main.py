@@ -47,10 +47,10 @@ def save_to_file(format, image, name):
 
 answer_to_image = {
     "Thiais": "erster-test",
-    "Lumière": "geschenk",
-    "Café Gourmand": "geschenk",
-    "Nice": "geschenk",
-    "Literatur": "geschenk",
+    "Lumière": "geschenk1",
+    "Café Gourmand": "geschenk2",
+    "Nice": "geschenk3",
+    "Literatur": "geschenk4",
     "Paris du Nord": "foehn",
     "Tour de France": "restaurant",
 }

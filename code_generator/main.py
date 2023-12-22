@@ -33,7 +33,7 @@ def add_text_to_qr_image(text_under_qr, qr_img):
 
     text_x = 40
     text_y = 0
-    font_size = 40
+    font_size = 34
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', size=font_size)
     draw.text((text_x, text_y), text_under_qr, fill="black", font=font, align="center")
 
@@ -75,6 +75,7 @@ wrong_answers = [
     "Saint-Malo",
     "Le Havre",
     "Reims",
+    "Berlin",
 
     "Macron",
     "Lemire",
@@ -95,6 +96,10 @@ wrong_answers = [
     "Dupond",
     "Dupont",
     "Dupont-Aignan",
+    "Curie",
+    "Pasteur",
+    "Pascal",
+
 
     "Café au lait",
     "Café crème",
@@ -123,8 +128,7 @@ wrong_answers = [
     "Pain aux amandes",
     "Tradition",
     "Brioche",
-
-    "Literatur",
+    
     "Kunst",
     "Musik",
     "Mathematik",
@@ -150,6 +154,13 @@ wrong_answers = [
     "Noël",
     "Nouvel An",
     "Fête des Rois",
+    "Fußball-WM",
+    "French Open Tennis",
+    "Bastille-Tag-Parade",
+    "Cannes Filmfestival",
+    "Le Mans Rennen",
+
+
 ]
 
 if __name__ == "__main__":

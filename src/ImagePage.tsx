@@ -9,7 +9,7 @@ const NotFound = () => {
     const image = params.get('image') ?? "falsch";
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh' }}>
             <img style={{ maxWidth: '100%', maxHeight: '100%' }} src={`${process.env.PUBLIC_URL}/images/${image}.png`} alt={alt} />
         </div>
     );
